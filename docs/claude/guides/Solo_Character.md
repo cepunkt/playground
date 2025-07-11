@@ -1,6 +1,6 @@
 # Creating Deep Solo Characters: A Practical Guide for Extended One-on-One Chats
 
-*Created with Claude Opus 4 on January 11, 2025*
+*Created with Claude Opus 4 on July 11, 2025*
 
 ## The "Amnesia Patient" Reality
 
