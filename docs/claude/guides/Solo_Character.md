@@ -678,7 +678,7 @@ Most characters work perfectly with:
 - Traits aren't expressing consistently
 - You need conditional logic (JSON)
 - Complex hierarchies matter (YAML/XML)
-- Maximum attention override required (<s> tags)
+- Maximum attention override required (\<s> tags)
 - Token budget is extremely tight
 
 The best format is the simplest one that achieves your goal. Every bracket, angle, and brace is a trade-off between control and naturalism.
