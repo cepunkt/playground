@@ -608,7 +608,7 @@ Maximum proximity (Post-History):
 4. **YAML structure**: +20% attention boost
 5. **JSON objects**: +25% attention boost
 6. **<XML> tags**: +30-40% attention boost (per research: "30-40% better parsing")
-7. **'<s>' or <IMPORTANT>**: Maximum attention override
+7. **\<s> or <IMPORTANT>**: Maximum attention override
 
 ### Practical Format Mixing
 
