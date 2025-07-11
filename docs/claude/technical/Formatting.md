@@ -1,4 +1,4 @@
-# Technical Evidence on Formatting Patterns and LLM Behavior
+# Technical Speculations on Formatting Patterns and LLM Behavior
 
 **Large Language Models demonstrate measurable sensitivity to text formatting patterns, with proper formatting improving performance by 57-500% depending on the model and task.** Recent systematic studies reveal that formatting choices affect tokenization efficiency, attention mechanisms, and instruction following through quantifiable pathways rather than mere stylistic preferences. The evidence shows that different bracket types, capitalization patterns, and delimiter choices create distinct processing signatures that influence model behavior at the architectural level.
 
