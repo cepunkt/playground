@@ -1,10 +1,5 @@
-> **Disclaimer**
->
-> This guide was developed through practical experimentation and collaborative analysis using large language models (Claude and ChatGPT). We are not industry experts or AI researchers — just GMs and prompt designers documenting behavioral patterns we've consistently observed in LLM-based storytelling systems.  
->
-> The content here is meant as a **practical design toolkit**, not a theoretical authority. It reflects observed trends and statistical tendencies in model behavior, particularly in narrative and character consistency across AI chat platforms.  
->
-> We welcome critique, improvements, and corrections — especially from those with system-level understanding or different testing results.
+> **Disclaimer:**
+> This document was cobbled together by a sleep-deprived SRE who mistakenly thought understanding AI was easier than debugging Kubernetes. Not an expert, not a researcher—just a nerd with too much caffeine and curiosity. Various AI tools "helped" create this content (and by "helped" I mean "occasionally hallucinated with confidence"). Any profound insights are accidental, and any technical accuracy is purely coincidental. If you're implementing mission-critical systems based on my ramblings, you deserve whatever chaos ensues.
 
 # The Counter-Intuitive Mantras of LLM Reasoning: Why AI Thinks Backwards From Humans
 
