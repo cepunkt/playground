@@ -1,10 +1,5 @@
-> **Disclaimer**
->
-> This guide was developed through practical experimentation and collaborative work using large language models (Claude and ChatGPT). We're not industry experts or system designers — just GMs documenting what’s worked for us through testing and iteration.  
->
-> Everything here is intended as a flexible toolkit, not a rigid rulebook. Expect updates as we learn more and adapt the techniques.  
->
-> Feedback, suggestions, and improvements are welcome.
+> **Disclaimer:**
+> This document was cobbled together by a sleep-deprived SRE who mistakenly thought understanding AI was easier than debugging Kubernetes. Not an expert, not a researcher—just a nerd with too much caffeine and curiosity. Various AI tools "helped" create this content (and by "helped" I mean "occasionally hallucinated with confidence"). Any profound insights are accidental, and any technical accuracy is purely coincidental. If you're implementing mission-critical systems based on my ramblings, you deserve whatever chaos ensues.
 
 # Creating World Narrator Characters for SillyTavern Group Chats
 
