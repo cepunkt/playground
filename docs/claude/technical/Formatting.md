@@ -1,16 +1,7 @@
-> **Disclaimer**
->
-> This document was developed through collaborative analysis using both human research and assistance from large language models (Claude and ChatGPT). AI was used to help synthesize technical papers, summarize community testing results, and refine explanatory structure — but all source interpretation, verification, and final curation were performed by a human author.  
->
-> The findings presented here reflect observed trends across published studies, controlled experiments, and system-level testing. Where performance metrics or percentage estimates are cited, they should be interpreted as **contextual approximations**, not universal guarantees.  
->
-> Model behavior varies significantly by architecture, tokenizer, prompt formatting, and training data. The formatting principles discussed are **intended as practical heuristics**, not formal specifications.  
->
-> Readers are encouraged to validate techniques in their own environments and consult primary research sources for critical applications.  
->
-> Transparent acknowledgment of AI involvement is included here for clarity and integrity.
+> **Disclaimer:**
+> This document was cobbled together by a sleep-deprived SRE who mistakenly thought understanding AI was easier than debugging Kubernetes. Not an expert, not a researcher—just a nerd with too much caffeine and curiosity. Various AI tools "helped" create this content (and by "helped" I mean "occasionally hallucinated with confidence"). Any profound insights are accidental, and any technical accuracy is purely coincidental. If you're implementing mission-critical systems based on my ramblings, you deserve whatever chaos ensues.
 
-# Technical Speculations on Formatting Patterns and LLM Behavior
+# Technical Evidence on Formatting Patterns and LLM Behavior
 
 **Large Language Models demonstrate measurable sensitivity to text formatting patterns, with proper formatting improving performance by 57-500% depending on the model and task.** Recent systematic studies reveal that formatting choices affect tokenization efficiency, attention mechanisms, and instruction following through quantifiable pathways rather than mere stylistic preferences. The evidence shows that different bracket types, capitalization patterns, and delimiter choices create distinct processing signatures that influence model behavior at the architectural level.
 
