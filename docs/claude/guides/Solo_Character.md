@@ -1,3 +1,12 @@
+> **Disclaimer**
+>
+> This guide was developed through practical experimentation and collaborative work using large language models (Claude and ChatGPT). We're not industry experts or system designers — just GMs documenting what’s worked for us through testing and iteration.  
+>
+> Everything here is intended as a flexible toolkit, not a rigid rulebook. Expect updates as we learn more and adapt the techniques.  
+>
+> Feedback, suggestions, and improvements are welcome.
+
+
 # Creating Deep Solo Characters: A Practical Guide for Extended One-on-One Chats
 
 *Created with Claude Opus 4 on July 11, 2025*
