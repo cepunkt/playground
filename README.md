@@ -201,6 +201,33 @@ This documentation is shared for **educational and research purposes**. Use, mod
 
 ---
 
+⚠️ MISSION CRITICAL SYSTEMS DISCLAIMER ⚠️
+
+This repository contains experimental documentation for entertainment and research purposes only. 
+DO NOT USE these techniques for mission-critical, safety-critical, or production systems where 
+human safety, financial transactions, medical decisions, or legal determinations are involved.
+
+The documentation represents sleep-deprived engineering experiments combined with AI-assisted 
+pattern matching - essentially "hallucinations meeting hallucinations." Git timestamps reveal 
+development during questionable decision-making hours when caffeine and curiosity overrode 
+sound judgment.
+
+These techniques are designed to make statistical text generators produce convincing roleplay 
+illusions. They are NOT:
+- Reliable for consistent decision-making
+- Suitable for automated customer service
+- Appropriate for medical or legal advice systems
+- Safe for financial or security applications
+- Recommended for anything beyond creative entertainment
+
+If you deploy these methods in production systems affecting real-world outcomes, you assume 
+full responsibility for whatever chaos ensues. The authors explicitly disclaim liability for 
+any consequences of treating entertainment-focused AI techniques as production-ready solutions.
+
+Use responsibly. Test extensively. Deploy nowhere important.
+
+---
+
 *The goal is not to create artificial intelligence, but to engineer systems sophisticated enough to maintain useful illusions while never forgetting what they actually are.*
 
 **Contributors**: [cepunkt](https://github.com/cepunkt)  
