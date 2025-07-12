@@ -1,3 +1,11 @@
+> **Disclaimer**
+>
+> This guide was developed through practical experimentation and collaborative work using large language models (Claude and ChatGPT). We're not industry experts or system designers — just GMs documenting what’s worked for us through testing and iteration.  
+>
+> Everything here is intended as a flexible toolkit, not a rigid rulebook. Expect updates as we learn more and adapt the techniques.  
+>
+> Feedback, suggestions, and improvements are welcome.
+
 # The Counter-Intuitive Mantras of LLM Reasoning: Why AI Thinks Backwards From Humans
 
 ## TL;DR Box
