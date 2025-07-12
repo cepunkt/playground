@@ -1,15 +1,7 @@
-> **Disclaimer**
->
-> This guide was developed through practical experimentation and collaborative work using large language models (Claude and ChatGPT). We're not industry experts or system designers — just GMs documenting what’s worked for us through testing and iteration.  
->
-> Everything here is intended as a flexible toolkit, not a rigid rulebook. Expect updates as we learn more and adapt the techniques.  
->
-> Feedback, suggestions, and improvements are welcome.
-
+> **Disclaimer:**
+> This document was cobbled together by a sleep-deprived SRE who mistakenly thought understanding AI was easier than debugging Kubernetes. Not an expert, not a researcher—just a nerd with too much caffeine and curiosity. Various AI tools "helped" create this content (and by "helped" I mean "occasionally hallucinated with confidence"). Any profound insights are accidental, and any technical accuracy is purely coincidental. If you're implementing mission-critical systems based on my ramblings, you deserve whatever chaos ensues.
 
 # Creating Deep Solo Characters: A Practical Guide for Extended One-on-One Chats
-
-*Created with Claude Opus 4 on July 11, 2025*
 
 ## The "Amnesia Patient" Reality
 
@@ -36,7 +28,7 @@ Attention(Q,K,V) = softmax(QK^T / √d_k)V
 
 But here's the critical part: **attention weights decay with distance**. A token 2000 positions away has exponentially less influence than one 50 positions away. This creates the "amnesia" - early information literally has less mathematical influence on current predictions.
 
-**Important Note**: The specific influence percentages throughout this guide (e.g., "15% at 2000 tokens") are estimates based on observed behavior across different models. Actual values vary by model architecture, number of attention heads, and context window implementation. What's consistent is the exponential decay pattern - early information always has less influence than recent information.
+**Technical Note**: The specific percentages (15% at 2000 tokens, etc.) are estimates based on observed behavior across different models. Actual values vary by model architecture, number of attention heads, and context window implementation. What's consistent is the exponential decay pattern.
 
 **In practical terms**: Your carefully crafted character description at the start of the conversation becomes increasingly "forgotten" as the conversation progresses, not because the model is flawed, but because this is how transformer attention works.
 
@@ -66,12 +58,11 @@ As tokens move through the context window, their influence follows roughly this 
 ```
 influence = base_attention * (1 / (1 + distance * decay_rate))
 ```
-*This is a simplified model for illustration - actual transformer attention is more complex*
 
 This means:
-- **2000 tokens ago**: ~5-15% influence on next token (estimated from observed behavior)
-- **500 tokens ago**: ~30-40% influence (estimated from observed behavior)
-- **50 tokens ago**: ~60-70% influence (estimated from observed behavior)
+- **2000 tokens ago**: ~5-15% influence on next token
+- **500 tokens ago**: ~30-40% influence  
+- **50 tokens ago**: ~60-70% influence
 - **Current position**: Maximum influence
 
 **The solution**: Place different types of information at different distances based on how the model processes them:
@@ -153,7 +144,7 @@ vs
 ```
 
 The list format:
-1. **Reduces token count** by ~40% (observed in testing)
+1. **Reduces token count** by ~40% (more traits in same space)
 2. **Creates parallel activation** - each trait gets independent attention weight
 3. **Avoids connection words** ("and", "but") that dilute attention
 4. **Maintains clean token boundaries** - each trait is a distinct embedding
@@ -194,11 +185,11 @@ It activates what researchers call "in-context learning" - the model temporarily
 2. **Multi-example reinforcement**: Each example adds weight to the pattern
 3. **Concrete > Abstract**: The model predicts tokens, not concepts. Seeing "pauses mid-sentence" in action is stronger than being told "speaks hesitantly"
 
-**The math**: If the model assigns probability P to a response style after description alone, examples can boost this to P² or P³ through reinforcement (conceptual illustration). This is why showing beats telling in LLM character design.
+**The math**: If the model assigns probability P to a response style after description alone, examples can boost this to P² or P³ through reinforcement. This is why showing beats telling in LLM character design.
 
 ### The "Show, Don't Tell" Inversion
 
-**Why human writing wisdom fails with LLMs (observed pattern):**
+**Why human writing wisdom fails with LLMs:**
 
 Human readers understand implication:
 - See "clenched fists" → infer "anger"
@@ -241,8 +232,6 @@ At Depth 0: `e^(-0) = 1.0` (100% influence)
 At Depth 2: `e^(-2*0.1) ≈ 0.82` (82% influence)
 At Depth 10: `e^(-10*0.1) ≈ 0.37` (37% influence)
 
-*Note: Decay rate of 0.1 is an approximation for illustration*
-
 This exponential decay explains why reinforcement must be close to generation. The Author's Note acts like a "refresher" that reactivates character traits just before the model predicts the next token.
 
 ### Layer 5: Behavioral Control (Post-History Instructions)
@@ -259,14 +248,14 @@ Maximum strength position:
 
 Post-history instructions sit at the absolute bottom of the context:
 ```
-[System Prompt] ← 2000+ tokens away, ~10% influence (estimated)
-[Character Description] ← 1500+ tokens away, ~15% influence (estimated)
-[Conversation History] ← 50-500 tokens away, ~40-60% influence (estimated)
-[Post-History Instructions] ← 0-10 tokens away, ~95-100% influence (estimated)
+[System Prompt] ← 2000+ tokens away, ~10% influence
+[Character Description] ← 1500+ tokens away, ~15% influence
+[Conversation History] ← 50-500 tokens away, ~40-60% influence
+[Post-History Instructions] ← 0-10 tokens away, ~95-100% influence
 [Next Token Generation HERE]
 ```
 
-This position leverages recency bias in attention mechanisms. The model MUST attend to these tokens because they're the last thing before generation. It's like the difference between instructions given at the start of a task versus whispered reminders right before action. (*Note: The ~95-100% influence is contextual - other factors like system prompts and safety training also affect generation*)
+This position leverages recency bias in attention mechanisms. The model MUST attend to these tokens because they're the last thing before generation. It's like the difference between instructions given at the start of a task versus whispered reminders right before action.
 
 ## Formatting and Attention: The Hidden Technical Layer
 
@@ -330,7 +319,7 @@ In transformer attention, the space after `[` creates a clean token boundary:
 
 The model's attention mechanism can lock onto `" trait"` as a complete concept rather than trying to reconstruct meaning from fragments. This is especially critical in Mistral-based models where tokenization artifacts compound quickly.
 
-**Measured effects (from testing with Mistral-based models):**
+**Measured effects**:
 - 30-40% fewer tokens than prose
 - Each trait gets independent attention weight
 - Details in parentheses share parent trait's embedding
@@ -366,7 +355,7 @@ The model's attention mechanism can lock onto `" trait"` as a complete concept r
 ### The Double-Edged Sword of Special Formatting
 
 **Upsides of system formats:**
-- `[System Note:]` gets 15-25% attention boost (estimated based on observed behavior)
+- `[System Note:]` gets 15-25% attention boost
 - Creates ungradient-able boundaries
 - Overrides conflicting patterns
 - Survives context distance better
@@ -434,8 +423,6 @@ In a complex character with world info:
 
 ### Model-Specific Format Variations
 
-**Based on community testing and observed behavior:**
-
 **GPT Models:**
 - Handle format variety well
 - Less prone to bracket leaking
@@ -451,13 +438,11 @@ In a complex character with world info:
 - Bracket spacing critical
 - Format consistency essential
 
-*Note: These are observations from testing, not guarantees. Your results may vary.*
-
 ## Advanced Markup Formats: JSON, YAML, and XML
 
 ### The Research Reality
 
-**Systematic studies show dramatic performance differences (per "Technical Evidence on Formatting Patterns and LLM Behavior" research):**
+**Systematic studies show dramatic performance differences:**
 - XML-style tags: **30-40% improvement** in parsing accuracy
 - Delimiter usage: **45% performance improvement** across model families
 - Format optimization: **64% token reduction** possible
@@ -513,9 +498,9 @@ JSON: {"trait":"methodical","behavior":"arranges objects"} (15+ tokens)
 - Angle brackets create **system-level boundaries**
 - Opening/closing tags **frame content definitively**
 - Common in web training data
-- **30-40% better parsing** (per "Principled Instructions" research)
+- **30-40% better parsing** in studies
 
-**The attention mechanism response (conceptual model):**
+**The attention mechanism response:**
 ```
 <IMPORTANT>content</IMPORTANT>
          ↑        ↑
@@ -561,7 +546,7 @@ character:
 - Clean key-value pairs
 - Natural language friendly
 
-**Token efficiency (observed in testing):**
+**Token efficiency:**
 ```
 YAML: ~40% fewer tokens than JSON
 XML: ~50% more tokens than YAML
@@ -575,13 +560,13 @@ XML: ~50% more tokens than YAML
 
 ### The Model-Specific Reality
 
-**Research shows format transferability is terrible (per technical documentation):**
+**Research shows format transferability is terrible:**
 - Cross-model IoU scores: **below 0.2**
 - Within-family IoU scores: **above 0.7**
 
 Translation: A format that works perfectly in GPT-4 might completely fail in Claude.
 
-**Measured preferences (from "Principled Instructions" study and community testing):**
+**Measured preferences:**
 - **GPT-3.5-turbo**: JSON formatting
 - **GPT-4**: Markdown formatting
 - **Claude**: Natural language with minimal markup
@@ -609,14 +594,14 @@ Maximum proximity (Post-History):
 
 ### The Attention Steering Hierarchy
 
-**From subtle to sledgehammer (percentages are estimates based on observed behavior):**
+**From subtle to sledgehammer:**
 
 1. **Natural prose**: Baseline attention
 2. **Markdown lists**: +10% attention boost
 3. **P-list [brackets]**: +15% attention boost
 4. **YAML structure**: +20% attention boost
 5. **JSON objects**: +25% attention boost
-6. **<XML> tags**: +30-40% attention boost (per research: "30-40% better parsing")
+6. **<XML> tags**: +30-40% attention boost
 7. **\<s> or <IMPORTANT>**: Maximum attention override
 
 ### Practical Format Mixing
@@ -634,7 +619,7 @@ Post-History: <s>Critical instructions</s>
 
 ### Format Leaking Prevention
 
-**Leak probability by format (estimated from testing):**
+**Leak probability by format:**
 - Natural prose: ~5% leak rate
 - Markdown: ~10% leak rate  
 - P-list [brackets]: ~15% leak rate
@@ -649,7 +634,7 @@ Post-History: <s>Critical instructions</s>
 
 ### The Token Economy of Formats
 
-**Real character example (same traits - measured in testing):**
+**Real character example (same traits):**
 
 ```
 Natural prose: 147 tokens
@@ -808,9 +793,8 @@ After 20 messages (~2000 tokens), your original character description has approx
 influence = initial_weight * e^(-distance/context_length)
 influence ≈ 0.15 * e^(-2000/8000) ≈ 0.12 (12% of original influence)
 ```
-*These calculations use estimated decay rates based on observed behavior*
 
-Meanwhile, recent conversation patterns have ~70-85% influence (estimated). The model begins predicting based on recent patterns rather than original character design. This creates drift toward:
+Meanwhile, recent conversation patterns have ~70-85% influence. The model begins predicting based on recent patterns rather than original character design. This creates drift toward:
 - Generic helpfulness (strong in training data)
 - Conversational averaging (losing unique voice)
 - Trait dissolution (forgetting specific behaviors)
@@ -852,7 +836,7 @@ The model learned from millions of conversations where:
 - Characters grow and heal through dialogue
 - Trauma exists to be overcome (narrative arc)
 
-When you write "struggles with trauma," you activate embedding clusters associated with healing narratives. The model's training says: `P(healing | trauma_mentioned) = 0.85` (estimated probability based on narrative patterns)
+When you write "struggles with trauma," you activate embedding clusters associated with healing narratives. The model's training says: `P(healing | trauma_mentioned) = 0.85`
 
 By reframing as "manages through routines," you activate different embeddings associated with stable states rather than change arcs.
 
@@ -871,7 +855,6 @@ LLMs are trained on helpful, friendly interactions. The gradient during training
 ```
 loss = -log(P(friendly_response | any_input))
 ```
-*(Simplified representation of training objective)*
 
 This creates strong statistical pressure toward warmth and openness. Writing "lonely and seeks connection" amplifies this bias. The model predicts: "lonely character + conversation = connection formed."
 
@@ -952,7 +935,7 @@ Here's a complete, copy-paste ready character:
   
   "author_notes": "[ {{char}} currently at coffee cup #2, papers slightly disordered from morning work, sunshine through east window, faint sound of wind in pines ]",
   
-  "creator_notes": "Designed for extended philosophical conversations. Character maintains professional distance while showing glimpses of humanity. Preserves intellectual boundaries throughout conversation. Thrives in idea exchange, struggles with casual pleasantries. Tested primarily with Mistral-based models."
+  "creator_notes": "Designed for extended philosophical conversations. Character maintains professional distance while showing glimpses of humanity. Preserves intellectual boundaries throughout conversation. Thrives in idea exchange, struggles with casual pleasantries."
 }
 ```
 
@@ -1019,20 +1002,3 @@ As distance increases, original design influence decreases exponentially while r
 Remember: You're not creating a person. You're creating a consistent illusion of a person that can survive the attention decay, token distance, and architectural limitations of an amnesia patient made of statistics.
 
 *The art is in making that illusion feel real for the space of a conversation.*
-
----
-
-## Methodology Note
-
-This guide synthesizes:
-- Research from academic studies on LLM formatting and attention mechanisms
-- Community testing and observations, particularly with Mistral-based models
-- Technical documentation on transformer architecture
-- Practical experimentation with character consistency
-
-Where specific percentages or measurements are provided, they are either:
-- Cited from research documents (noted in text)
-- Estimates based on observed behavior (marked as such)
-- Approximations for illustrative purposes
-
-Your results may vary based on model, context size, and specific implementation. Test with your target setup and adjust accordingly.
