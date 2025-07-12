@@ -1,12 +1,5 @@
-> **Disclaimer**
->
-> This guide was developed through practical experimentation and refinement using both human input and AI assistance (Claude and ChatGPT). Large language models were used to help organize examples, clarify formatting strategies, and simulate token efficiency outcomes — but all category design, formatting logic, and structure decisions were reviewed and finalized by human authors.  
->
-> The formatting patterns described here reflect community practices, observed behavior across models, and performance-informed adjustments. However, they are **not universal rules**, and model response may vary depending on architecture, tokenizer, training data, and context handling.  
->
-> This guide is intended as a practical reference for character design, not as a formal standard. Readers are encouraged to test these patterns in their own workflows and adapt formatting based on model-specific needs.  
->
-> AI involvement is disclosed here transparently for clarity and user trust.
+> **Disclaimer:**
+> This document was cobbled together by a sleep-deprived SRE who mistakenly thought understanding AI was easier than debugging Kubernetes. Not an expert, not a researcher—just a nerd with too much caffeine and curiosity. Various AI tools "helped" create this content (and by "helped" I mean "occasionally hallucinated with confidence"). Any profound insights are accidental, and any technical accuracy is purely coincidental. If you're implementing mission-critical systems based on my ramblings, you deserve whatever chaos ensues.
 
 # P-List Structure Guide: Standard Character Categories
 
