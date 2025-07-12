@@ -19,8 +19,8 @@
 ## Test Methodology
 
 ### Models Tested
-- **EtherealAurora-12B-v2**: 12B parameters, **i1_Q5_K_M quantization** (corrected specification)
-- **Cydonia-22B-v1.3**: 22B parameters, IQ3_S quantization
+- **EtherealAurora-12B-v2**: 12B parameters, **i1_Q5_K_M quantization**
+- **Cydonia-22B-v1.3**: 22B parameters, **i1_IQ3_S quantization**
 
 ### Test Configuration
 - **Context Windows**: 20k tokens (12B), 14k tokens (22B)
