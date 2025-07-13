@@ -66,3 +66,27 @@ If you wanted to properly validate these claims, you'd need:
 If you want to use our techniques, test them yourself with your own models, scenarios, and criteria. Don't trust our "validation" - we're just pattern-matching humans who like to think we understand more than we do.
 
 ## File Structure
+```
+testing/
+├── README.md (this file - methodological warning)
+├── characters/
+│   ├── test_01/ (World Narrator architecture comparison)
+│   └── [future tests - all with same limitations]
+└── [other test types - equally unscientific]
+```
+
+## Test Report Reading Guide
+
+When reading any test report in this directory:
+
+1. **Ignore the scientific language** - it's window dressing
+2. **Look for actual examples** - the only concrete data we have
+3. **Consider our biases** - we're trying to validate our own frameworks
+4. **Question the causation** - correlation is not causation, and we barely have correlation
+5. **Use as starting point only** - for your own actual testing
+
+---
+
+**Remember**: We're engineers documenting trial-and-error, not researchers conducting science. The scientific language is how we organize our thoughts, not evidence that we've proven anything.
+
+**Status**: All tests in this directory should be treated as anecdotal evidence at best, confirmation bias at worst.
