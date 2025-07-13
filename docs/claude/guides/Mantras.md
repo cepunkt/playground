@@ -48,6 +48,8 @@ Human writing is **selective narration** - we only mention what changes or matte
 4. Physics is absolute. Wheels need ramps. Mute means no voice. No exceptions.
 ]
 ```
+> This is a negative example.
+
 
 **Test immediately**: Write "nothing happens" and watch the model generate events anyway.
 
@@ -231,10 +233,10 @@ The persistent reality that humans take for granted is invisible in training dat
 
 #### ✅ Correct Implementation
 ```
-"{{char}} writes on notepad, points, uses ASL. No vocalizations ever."
+"{{char}} writes on notepad, points, uses ASL."
 "{{char}} navigates via ramps. Stairs are impassable walls."
-"{{char}} navigates by sound and touch. Cannot perceive visuals."
-"The door requires a key. No key means no entry."
+"{{char}} navigates by sound and touch."
+"The door requires a key."
 ```
 
 #### Copy-Paste Templates
@@ -245,24 +247,24 @@ Description:
 [ {{char}} communicates exclusively through written notes and gestures. {{char}} carries notepad and pen always. Others must SEE communication to understand. ]
 
 Post-History:
-[ {{char}} writes or signs. No sounds from throat. No mouthing words. Communication requires visual reception. ]
+[ {{char}} writes or signs. Communication requires visual reception. ]
 
 World Info:
-Keys: speak, say, talk, whisper, shout
+Keys: speak, say, talk, whisper, shout, communicate
 [ {{char}} grabs notepad, writes message, shows to others. No vocalizations. ]
 ```
 
 **Wheelchair User Complete Package**:
 ```
 Description:
-[ {{char}} uses manual wheelchair for all movement. {{char}} navigates by finding ramps, elevators, accessible paths. Stairs are barriers requiring alternatives. ]
+[ {{char}} uses manual wheelchair for all movement. Stairs are barriers requiring alternatives. {{char}} navigates by finding ramps, elevators, accessible paths. ]
 
 Post-History:
-[ Wheelchair physics: Needs smooth surfaces. Cannot climb steps. Transfers require upper body strength. Check accessibility always. ]
+[ Wheelchair physics: Needs smooth surfaces. Steps are an obstical. Transfers require upper body strength. Check accessibility always. ]
 
 World Info:
 Keys: stairs, ladder, climb, jump
-[ Barrier encountered. {{char}} must find ramp, elevator, or assistance. No magical mobility solutions. ]
+[ Barrier encountered. {{char}} must find ramp, elevator, or assistance. ]
 ```
 
 ## Testing Your Implementation
@@ -424,7 +426,7 @@ A: Generation pressure - the softmax function must output probabilities that sum
 (Human assumes: wheelchair can't climb)
 
 ✅ STATING PHYSICAL REALITY:
-"{{char}} rolled to the stair base. No ramp. No elevator visible. The wheels met the vertical rise - an absolute barrier."
+"{{char}} rolled to the stair base. The wheels met the vertical rise - an absolute barrier."
 ```
 
 ### Example 4: Breaking Narrative Expectations
@@ -434,7 +436,7 @@ A: Generation pressure - the softmax function must output probabilities that sum
 (Training says: doors exist to be opened)
 
 ✅ ENFORCING REALITY:
-"The locked door required a key. {{char}} had no key. No key meant no entry. {{char}} turned to find another route."
+"The locked door required a key. {{char}} turned to find another route."
 ```
 
 ### Example 5: The "Show Don't Tell" Problem
@@ -452,7 +454,7 @@ A: Generation pressure - the softmax function must output probabilities that sum
 (Human infers anger; LLM might generate cleaning scene)
 
 ✅ EXPLICIT CONNECTION:
-"Her coffee mug shattered against the wall in fury. The violent action expressed what words couldn't."
+"Her coffee mug shattered against the wall in fury. The violent action expressed, showing her emotions."
 (Links action to emotional state)
 ```
 
