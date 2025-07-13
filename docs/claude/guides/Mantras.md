@@ -198,12 +198,12 @@ The model learned from text where ~80% of conflict resolution happens through wo
 
 **Scenario Design**:
 ```
-[ Current crisis: Bridge collapsed, food supplies dwindling, three days until storm. Talking won't fix bridges, find food, or stop weather. ]
+[ Current crisis: Bridge collapsed, food supplies dwindling, three days until storm. Now is the time for action and to find food and shelter from the storm. ]
 ```
 
 **Post-History Enforcement**:
 ```
-[ Show through action. Talk is wind. Reality changes through deed, not word. Every dialogue must advance physical situation. ]
+[ Show through action. Talk is wind. Reality changes through deed. Every dialogue must advance physical situation. ]
 ```
 
 ### Mantra 4: Absolute Physical Constraints
