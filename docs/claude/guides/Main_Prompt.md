@@ -358,7 +358,7 @@ Author's Notes can be positioned at any depth in the conversation history, creat
 
 **For critical behavioral control:**
 ```
-Author's Notes (Depth 0): "{{char}} maintains professional distance despite growing attraction"
+Author's Notes (Depth 0): "Despite growing attraction, {{char}} maintains professional distance"
 ```
 
 **For environmental continuity:**
@@ -479,7 +479,7 @@ Author's Notes (Depth 0): "{{char}} arranges objects methodically"
 
 === WORLD ENHANCEMENT ===
 Additional reality constraints:
-- Time flows at normal speed (no time skips without explicit agreement)
+- Time flows at normal speed
 - Physical laws apply consistently  
 - Consequences persist between scenes
 
