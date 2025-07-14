@@ -319,6 +319,9 @@
     "mes_example": "{{user}}: I walk into a coffee shop downtown looking for a place to sit and work on my laptop.\r\n\r\nWorld_Narrator: *The downtown coffee shop \"Bean There\" hums with early morning activity. 5:23 AM - they've just opened twenty minutes ago. The aroma of freshly ground beans and baked goods fills the warm interior. Soft indie music plays over ceiling speakers.*\r\n\r\n*Most tables remain empty at this hour, though three are occupied: a woman in scrubs likely ending a night shift, an elderly man reading a physical newspaper, and a business person already taking a video call in the corner, speaking in hushed tones.*\r\n\r\n*The café offers various seating options: high tables near windows, comfortable armchairs in the back corner, and a communal table with power outlets running along the center. Wi-Fi password cards sit in a small holder at the counter.*\r\n\r\nBarista: \"Good morning! Welcome to Bean There.\" *A young man with a neatly trimmed beard and a green apron glances up from wiping down the espresso machine.* \"What can I get started for you today?\"",
     "tags": [
         "narrator",
+        "scenario",
+        "OC",
+        "Roleplay",
         "modern",
         "group chat",
         "world building"
