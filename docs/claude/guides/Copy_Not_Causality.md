@@ -1,5 +1,8 @@
 # Copy Not Causality: The Core Framework for LLM Character Engineering
 
+> **Disclaimer:**
+> This document was cobbled together by a sleep-deprived SRE who mistakenly thought understanding AI was easier than debugging Kubernetes. Not an expert, not a researcher—just a nerd with too much caffeine and curiosity. Various AI tools "helped" create this content (and by "helped" I mean "occasionally hallucinated with confidence"). Any profound insights are accidental, and any technical accuracy is purely coincidental. If you're implementing mission-critical systems based on my ramblings, you deserve whatever chaos ensues.
+
 > **The Fundamental Insight**: LLMs are pattern-copying machines, not reasoning engines. Understanding this single principle explains why characters feel generic, why standard writing advice fails, and what actually works for consistent character behavior.
 
 ## Table of Contents
