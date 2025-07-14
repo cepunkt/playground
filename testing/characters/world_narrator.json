@@ -288,12 +288,15 @@
         },
         "tags": [
             "narrator",
+            "scenario",
+            "OC",
+            "Roleplay",
             "modern",
             "group chat",
             "world building"
         ],
         "creator": "cepunkt",
-        "character_version": "1.0",
+        "character_version": "1.2",
         "extensions": {
             "fav": false,
             "talkativeness": "0.5",
