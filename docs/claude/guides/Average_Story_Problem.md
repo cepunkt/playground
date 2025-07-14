@@ -1,5 +1,8 @@
 # The Statistical Average Story Problem: Why Your AI Character Keeps Doing the Same Boring Stuff
 
+> **Disclaimer:**
+> This document was cobbled together by a sleep-deprived SRE who mistakenly thought understanding AI was easier than debugging Kubernetes. Not an expert, not a researcher—just a nerd with too much caffeine and curiosity. Various AI tools "helped" create this content (and by "helped" I mean "occasionally hallucinated with confidence"). Any profound insights are accidental, and any technical accuracy is purely coincidental. If you're implementing mission-critical systems based on my ramblings, you deserve whatever chaos ensues.
+
 **TL;DR**: Your LLM isn't broken or stupid - it's a **statistical average-making machine** that gravitates toward the most probable story continuation from its training data. Understanding this explains why characters feel generic and how to fix it.
 
 ## The Core Problem: The Invisible "Average Story"
