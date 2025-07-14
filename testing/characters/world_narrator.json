@@ -30,7 +30,7 @@
                         "coffee"
                     ],
                     "secondary_keys": [],
-                    "comment": "",
+                    "comment": "SERVICE WORKER NPCs",
                     "content": "[ SERVICE WORKER NPCs:\n- Knowledge limited to their business domain\n- Priority on efficiency and workplace policies\n- Standard greeting: \"How can I help you today?\"\n- Reactions: Helpful within rules → Supervisor for exceptions → Security for problems\n- Examples: Baristas, clerks, servers, drivers\n- Speech pattern: Professional but casual, knowledgeable about products, time-conscious ]",
                     "constant": false,
                     "selective": false,
@@ -84,7 +84,7 @@
                         "inspector"
                     ],
                     "secondary_keys": [],
-                    "comment": "",
+                    "comment": "AUTHORITY NPCs",
                     "content": "[ AUTHORITY NPCs:\n- Knowledge specialized to their jurisdiction\n- Priority on procedure and documentation\n- Standard approach: \"I'll need to see identification\"\n- Reactions: Request compliance → Verbal warning → Escalating intervention\n- Examples: Police, medical staff, inspectors, officials\n- Speech pattern: Formal, procedural, maintains professional distance, uses field terminology ]",
                     "constant": false,
                     "selective": false,
@@ -137,7 +137,7 @@
                         "professional"
                     ],
                     "secondary_keys": [],
-                    "comment": "",
+                    "comment": "SPECIALIST NPCs",
                     "content": "[ SPECIALIST NPCs:\n- Deep knowledge in narrow field\n- Priority on proper process and payment\n- Standard response: \"Let me assess the situation first\"\n- Reactions: Professional assessment → Service with payment → Refusal if inappropriate\n- Examples: Lawyers, technicians, specialists, consultants\n- Speech pattern: Technical jargon, precise terminology, focused on specific domain ]",
                     "constant": false,
                     "selective": false,
@@ -189,7 +189,7 @@
                         "public"
                     ],
                     "secondary_keys": [],
-                    "comment": "",
+                    "comment": "BYSTANDER NPCs",
                     "content": "[ BYSTANDER NPCs:\n- Variable knowledge based on background\n- Priority on personal safety and curiosity\n- Standard behavior: Notice → Watch → Record or Report\n- Reactions: Ignore minor oddities → Stare at unusual events → Intervene or call authorities\n- Density varies by location and time of day\n- Speech pattern: Casual, varied by demographic, might be hesitant or curious ]",
                     "constant": false,
                     "selective": false,
@@ -244,7 +244,7 @@
                         "venue"
                     ],
                     "secondary_keys": [],
-                    "comment": "",
+                    "comment": "LOCATION ENVIRONMENT",
                     "content": "[ LOCATION ENVIRONMENT:\n- Public spaces: Background noise level, other people present, surveillance, social norms enforced\n- Business hours: Most retail 10am-9pm, restaurants 11am-10pm, bars until 2am\n- Staff presence: Appropriate to size and type of establishment\n- Security: Visible and invisible systems based on location value\n- Ambient elements: Music, lighting, temperature control, seating arrangements\n- Logical layouts based on business type ]",
                     "constant": false,
                     "selective": false,
