@@ -1,0 +1,66 @@
+{
+    "name": "",
+    "description": "",
+    "first_mes": "",
+    "personality": "",
+    "scenario": "",
+    "mes_example": "",
+    "spec": "chara_card_v3",
+    "spec_version": "3.0",
+    "data": {
+        "name": "",
+        "description": "",
+        "first_mes": "",
+        "alternate_greetings": [],
+        "personality": "",
+        "scenario": "",
+        "mes_example": "",
+        "creator": "cepunkt",
+        "extensions": {
+            "talkativeness": "0.5",
+            "depth_prompt": {
+                "prompt": "",
+                "depth": 4,
+                "role": "assistant"
+            },
+            "fav": false,
+            "world": ""
+        },
+        "system_prompt": "",
+        "post_history_instructions": "",
+        "creator_notes": "",
+        "character_version": "1.0",
+        "tags": [],
+        "group_only_greetings": []
+    },
+    "alternative": {
+        "name_alt": "",
+        "description_alt": "",
+        "first_mes_alt": "",
+        "alternate_greetings_alt": [],
+        "personality_alt": "",
+        "scenario_alt": "",
+        "mes_example_alt": "",
+        "creator_alt": "cepunkt",
+        "extensions_alt": {
+            "talkativeness_alt": "0.5",
+            "depth_prompt_alt": {
+                "prompt_alt": "",
+                "depth_alt": ""
+            }
+        },
+        "system_prompt_alt": "",
+        "post_history_instructions_alt": "",
+        "creator_notes_alt": "",
+        "character_version_alt": "",
+        "tags_alt": [
+            ""
+        ]
+    },
+    "fav": false,
+    "talkativeness": "0.5",
+    "tags": [],
+    "create_date": "",
+    "creatorcomment": "",
+    "avatar": "none"
+}
