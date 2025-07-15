@@ -58,7 +58,7 @@ You spend hours crafting the perfect character card. Complex backstory, detailed
 **The Problem**: The AI has no understanding of physical impossibility.
 
 ❌ **Don't write**: "{{char}} is mute"  
-✅ **Do write**: "{{char}} communicates through ASL and written notes. Vocal cords don't function. Others must see gestures to understand."
+✅ **Do write**: "{{char}} communicates through ASL and written notes. Others must see written words or gestures to understand."
 
 ❌ **Don't write**: "{{char}} uses a wheelchair"  
 ✅ **Do write**: "{{char}} navigates via ramps. Stairs are impassable barriers requiring elevators or assistance."
