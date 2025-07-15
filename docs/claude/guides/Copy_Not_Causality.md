@@ -115,7 +115,7 @@ These principles work **with** pattern copying behavior, not against it:
 **Solution**: Explicitly state physical constraints as absolute
 
 ❌ **Wrong**: "{{char}} is mute"  
-✅ **Right**: "{{char}} writes on notepad. Vocal cords don't function. Communication requires others to see written words."
+✅ **Right**: "{{char}} writes on notepad. Communication requires others to see written words. Gestures and sign language to communicate."
 
 **Why this works**: Training data shows obstacles being overcome dramatically. You must provide patterns where constraints remain constraints.
 
