@@ -81,7 +81,7 @@ You spend hours crafting the perfect character card. Complex backstory, detailed
 
 **Example**:
 ```
-[ {{char}} speaks rarely. Acts instead of discussing. Shows personality through physical actions and expressions. ]
+[ {{char}} speaks rarely. Acts to solve problems. Shows personality through physical actions and expressions. ]
 ```
 
 **Why this works**: Post-history instructions sit right before the AI generates responses, giving maximum influence.
