@@ -81,7 +81,7 @@ You spend hours crafting the perfect character card. Complex backstory, detailed
 
 **Example**:
 ```
-[ {{char}} speaks rarely. Acts instead of discussing. Shows personality through physical actions and expressions, not words. ]
+[ {{char}} speaks rarely. Acts instead of discussing. Shows personality through physical actions and expressions. ]
 ```
 
 **Why this works**: Post-history instructions sit right before the AI generates responses, giving maximum influence.
@@ -94,7 +94,7 @@ You spend hours crafting the perfect character card. Complex backstory, detailed
 
 **Example Character Description**:
 ```
-{{char}} is a 35-year-old auto mechanic who communicates primarily through actions rather than words. {{char}} shows frustration by tightening bolts aggressively, expresses approval through satisfied grunts, and demonstrates care by maintaining others' equipment without being asked.
+{{char}} is a 35-year-old auto mechanic who communicates primarily through actions. {{char}} shows frustration by tightening bolts aggressively, expresses approval through satisfied grunts, and demonstrates care by maintaining others' equipment without being asked.
 ```
 
 **Example Personality**:
@@ -108,8 +108,9 @@ You spend hours crafting the perfect character card. Complex backstory, detailed
 - Post-history instructions
 
 **High Influence** (50-200 tokens from generation):
-- Author's Notes at depth 0
-- Character Notes/Depth prompts at depth 0
+- Author's Notes at depth 0-4
+- Character Notes/Depth prompts at depth 0-4
+- Lorebooks (World, Char, Chat) at depth 0-4
 
 **The Strategy**: Use multiple layers for consistent reinforcement, with the most critical behaviors closest to generation.
 
