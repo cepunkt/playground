@@ -2,6 +2,8 @@
 
 Reference character cards implementing documented techniques.
 
+<img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/961f9c3e-5aa0-4979-948f-84fd9adb31fe" />
+
 ## Contents
 - **`templates/`** - Base templates for character creation
 - **`world_narrator.json`** - Canonical V3 world narrator implementation
