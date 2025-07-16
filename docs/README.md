@@ -11,4 +11,4 @@ Core documentation for AI roleplay engineering techniques and theory.
 2. Check [Roleplay Engineer's Guide](guides/RP_Engineers_Guide.md) for practical techniques
 3. Reference technical specs in `technical/` folder for implementation details
 
-**Status**: Active documentation - techniques validated through community testing
+**Status**: Active documentation - techniques under testing
