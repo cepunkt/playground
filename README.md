@@ -4,7 +4,7 @@
 
 > **Mission**: Help Tom the Amnesia Patient (your LLM) trick you into believing the illusion for roleplay purposes.
 
-<img width="256" height="384" alt="Image" src="https://github.com/user-attachments/assets/f2533c2f-185c-4ecf-a68c-1cbbe867be60" />
+<img width="256" height="384" alt="image" src="https://github.com/user-attachments/assets/ac7f4adf-5048-4c6a-ae54-8c159bfe1a4c" />
 
 ## What This Is
 
