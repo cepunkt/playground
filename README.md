@@ -78,11 +78,11 @@ Post-history instructions (~95% influence) > Recent context (~60%) > Character d
 
 ---
 
-⚠️ MISSION CRITICAL SYSTEMS DISCLAIMER ⚠️
+## ⚠️ MISSION CRITICAL SYSTEMS DISCLAIMER ⚠️
 
-This repository contains experimental documentation for entertainment and research purposes only. 
+**This repository contains experimental documentation for entertainment and research purposes only. 
 DO NOT USE these techniques for mission-critical, safety-critical, or production systems where 
-human safety, financial transactions, medical decisions, or legal determinations are involved.
+human safety, financial transactions, medical decisions, or legal determinations are involved.**
 
 The documentation represents sleep-deprived engineering experiments combined with AI-assisted 
 pattern matching - essentially "hallucinations meeting hallucinations." Git timestamps reveal 
@@ -90,7 +90,9 @@ development during questionable decision-making hours when caffeine and curiosit
 sound judgment.
 
 These techniques are designed to make statistical text generators produce convincing roleplay 
-illusions. They are NOT:
+illusions.
+
+**They are NOT:**
 - Reliable for consistent decision-making
 - Suitable for automated customer service
 - Appropriate for medical or legal advice systems
