@@ -1,16 +1,14 @@
-# Character Implementations
+# Character Templates
 
-Reference character cards implementing documented techniques.
+Base templates for creating V3 character cards with proper field structure.
 
-## Contents
-- **`templates/`** - Base templates for character creation
-- **`world_narrator.json`** - Canonical V3 world narrator implementation
-- **`elena_torres.json`** - Complex character example with V3 features
-- **Test cases** - Specific validation scenarios
+## Templates
+- **`empty_template.json`** - Blank V3 structure with all fields
+- **`char_template.json`** - Pre-filled with standard system prompt and post-history instructions
 
 ## Usage
-These characters demonstrate practical application of theoretical frameworks. Use as starting points for your own implementations.
+Copy template, fill in character-specific details, test with your target model.
 
-**Note**: All characters tested on local models (22B Cydonia, 12B EtherealAurora) - results may vary with different models and contexts.
+**Note**: Templates include our standard system prompt and post-history instructions - modify for your specific needs.
 
-**Status**: Working examples validated through group chat testing
+**Status**: Canonical V3 implementations ready for customization
