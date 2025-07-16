@@ -4,6 +4,9 @@
 
 > **Mission**: Help Tom the Amnesia Patient (your LLM) trick you into believing the illusion for roleplay purposes.
 
+<img width="1024" height="1536" alt="ChatGPT Image Jul 16, 2025, 02_36_50 PM" src="https://github.com/user-attachments/assets/78386527-c8c8-414c-85cc-19716a793798" />
+
+
 ## Our Thesis: Language Hacking Meets Statistical Probability
 
 We exploit the tools we understand have influence on the outcome. **Language hacking meets statistical probability in 4096+ dimensions** to get an output that sounds real enough for roleplay purposes.
