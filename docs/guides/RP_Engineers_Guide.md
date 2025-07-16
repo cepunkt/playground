@@ -118,7 +118,7 @@ You spend hours crafting the perfect character card. Complex backstory, detailed
 
 ### "My character keeps giving therapy sessions"
 **Problem**: Defaulting to dialogue-based problem solving  
-**Fix**: Add to post-history: "{{char}} solves problems through action, not discussion"
+**Fix**: Add to post-history: "{{char}} solves problems through action"
 
 ### "Physical disabilities keep getting 'overcome'"
 **Problem**: AI copying narrative patterns where obstacles are dramatic tension  
