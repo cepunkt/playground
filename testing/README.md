@@ -2,6 +2,9 @@
 
 ⚠️ **CRITICAL WARNING**: The tests in this directory are **not scientific validation**. They represent anecdotal observations, subjective assessments, and pattern recognition that may be entirely wrong about underlying causes.
 
+<img width="256" height="256" alt="ChatGPT Image Jul 16, 2025, 01_53_07 PM" src="https://github.com/user-attachments/assets/961f9c3e-5aa0-4979-948f-84fd9adb31fe" />
+
+
 ## What These Tests Actually Are
 
 **Tea leaf reading dressed up as methodology.** We compare a few model outputs, decide which ones we prefer, then construct explanatory frameworks that may have nothing to do with why the differences actually occurred.
