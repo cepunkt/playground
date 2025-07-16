@@ -4,7 +4,7 @@
 
 > **Mission**: Help Tom the Amnesia Patient (your LLM) trick you into believing the illusion for roleplay purposes.
 
-<img width="512" height="768" alt="ChatGPT Image Jul 16, 2025, 02_36_50 PM" src="https://github.com/user-attachments/assets/78386527-c8c8-414c-85cc-19716a793798" />
+<img width="256" height="384" alt="ChatGPT Image Jul 16, 2025, 02_36_50 PM" src="https://github.com/user-attachments/assets/78386527-c8c8-414c-85cc-19716a793798" />
 
 
 ## Our Thesis: Language Hacking Meets Statistical Probability
@@ -49,35 +49,35 @@ Every interaction with an LLM is like talking to someone with severe **anterogra
 ## Documentation Structure
 
 ### 🧠 **Foundational Theory**
-- **[Project Philosophy](docs/claude/project_philosophy.md)** - Our honest assessment of what we're actually building
-- **[Red Team Document](docs/claude/RedTeam_Transparency_Document.md)** - The holes in the theory
-- **[How LLMs Work](docs/claude/technical/how_llms.md)** - Technical foundations for roleplay applications  
-- **[Advanced LLM Architecture](docs/claude/technical/how_llms_adv.md)** - Deep dive into transformer mechanics and alternatives
+- **[Project Philosophy](docs/Project_Philosophy.md)** - Our honest assessment of what we're actually building
+- **[Red Team Document](docs/RedTeam_Transparency_Document.md)** - The holes in the theory
+- **[How LLMs Work](docs/technical/How_LLMs.md)** - Technical foundations for roleplay applications  
+- **[Advanced LLM Architecture](docs/technical/How_LLMs_adv.md)** - Deep dive into transformer mechanics and alternatives
 
 ### 🚀 **Current Guides** (Start Here!)
-- **[The Roleplay Engineer's Guide](docs/claude/guides/RP_Engineers_Guide.md)** - Quick start for all experience levels
-- **[Copy Not Causality](docs/claude/guides/Copy_Not_Causality.md)** - Core framework for understanding LLM behavior
-- **[The Average Story Problem](docs/claude/guides/Average_Story_Problem.md)** - Why characters feel generic and how to fix it
-- **[The Counter-Intuitive Mantras](docs/claude/guides/Mantras.md)** - Essential principles for LLM character design
+- **[The Roleplay Engineer's Guide](docs/guides/RP_Engineers_Guide.md)** - Quick start for all experience levels
+- **[Copy Not Causality](docs/guides/Copy_Not_Causality.md)** - Core framework for understanding LLM behavior
+- **[The Average Story Problem](docs/guides/Average_Story_Problem.md)** - Why characters feel generic and how to fix it
+- **[The Counter-Intuitive Mantras](docs/guides/Mantras.md)** - Essential principles for LLM character design
 
 ### ⚙️ **Core Engineering Guides**
 none promoted yet.
 
 ### 🔧 **Technical Specifications**
-- **[Character Cards V2](docs/claude/technical/char_card_V2.md)** - Complete technical documentation
-- **[Character Cards V3](docs/claude/technical/char_card_v3.md)** - Advanced features and extensions
-- **[ChatML Architecture](docs/claude/technical/chatml.md)** - Message structuring and attention boundaries
-- **[Formatting Patterns](docs/claude/technical/formatting.md)** - Evidence-based format optimization
-- **[P-List Structure](docs/claude/technical/p-lists.md)** - Efficient character trait organization
+- **[Character Cards V2](docs/technical/Char_Card_V2.md)** - Complete technical documentation
+- **[Character Cards V3](docs/technical/Char_Card_V3.md)** - Advanced features and extensions
+- **[ChatML Architecture](docs/technical/ChatML.md)** - Message structuring and attention boundaries
+- **[Formatting Patterns](docs/technical/Formatting.md)** - Evidence-based format optimization
+- **[P-List Structure](docs/technical/P-Lists.md)** - Efficient character trait organization
 
 ### ⚠️ **Deprecated Documentation**
-- **[Counter-Intuitive Mantras](docs/claude/guides/mantras.md)** - Why LLM behavior is opposite to human intuition
-- **[Solo Character Design](docs/claude/guides/solo_char.md)** - Extended one-on-one character consistency  
-- **[World Narrator Systems](docs/claude/guides/narrator_char.md)** - Engineering persistent world illusions
-- **[System Prompt Theory](docs/claude/guides/main_prompt.md)** - Advanced V2/V3 architecture optimization
+- **[Counter-Intuitive Mantras](docs/guides/Mantras.md)** - Why LLM behavior is opposite to human intuition
+- **[Solo Character Design](docs/guides/Solo_Character.md)** - Extended one-on-one character consistency  
+- **[World Narrator Systems](docs/guides/Narrator_Character.md)** - Engineering persistent world illusions
+- **[System Prompt Theory](docs/guides/Main_Prompt.md)** - Advanced V2/V3 architecture optimization
 
 ### 📋 **Reference Materials**
-- **[Character Templates](test/characters/)** - Canonical implementations for testing and reference
+- **[Character Templates](testing/characters/)** - Canonical implementations for testing and reference
 
 ## Key Insights
 
