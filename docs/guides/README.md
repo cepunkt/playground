@@ -13,4 +13,5 @@ Practical guides for creating consistent AI characters and roleplay systems.
 - **World Narrator Systems** - Persistent environmental management
 
 **Focus**: Practical techniques that work with LLM limitations, not against them
+
 **Status**: Battle-tested guides from extensive roleplay applications
