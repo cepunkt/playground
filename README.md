@@ -4,7 +4,7 @@
 
 > **Mission**: Help Tom the Amnesia Patient (your LLM) trick you into believing the illusion for roleplay purposes.
 
-<img width="256" height="384" alt="ChatGPT Image Jul 16, 2025, 02_36_50 PM" src="https://github.com/user-attachments/assets/78386527-c8c8-414c-85cc-19716a793798" />
+<img width="256" height="384" alt="image" src="https://github.com/user-attachments/assets/62b02b42-d03a-443c-9129-701195c39a72" />
 
 ## What This Is
 
