@@ -58,8 +58,10 @@
 |------------------|--------------------|-----------------------------|
 | **"Better prompts"** | Teaching the AI | Finding magic words that trigger less polluted training data sections |
 | **"Fine-tuning"** | Specializing the model | Biasing the statistical weights toward specific patterns. Like loading dice - same mechanism, different probabilities |
-| **"RAG" (Retrieval Augmented Generation)** | Giving AI access to knowledge | Fancy copy-paste. Stuffing relevant text into context and hoping the pattern matching works |
+| **"RAG" (Retrieval Augmented Generation)** | Giving AI access to knowledge | Fancy copy-paste. Stuffing relevant text into context and hoping the pattern matching works. Hope that it's actually injected and not just snippets of noise competing with stronger training patterns |
+| **"Vector Storage/Database"** | Semantic knowledge retrieval | LLM tripwire. Throws maybe-relevant text at the model based on mathematical similarity that completely misses actual meaning. Like searching for "bank" and getting river banks mixed with financial banks because the vectors are "close" |
 | **"Chain of thought"** | Teaching reasoning | Triggering training patterns that included step-by-step text. The "reasoning" is just mimicking the format |
+| **"Tree of thought"** | Multiple reasoning paths | Let an LLM waste multiple times its energy generating different paths, then let it pick the most average of the averages. No reasoning, just the pattern matcher matching against all its limitations |
 | **"Constitutional AI"** | Ethical reasoning | Layered pattern matching with criticism patterns. Like having two slot machines argue - neither understands ethics |
 
 ## The Bottom Line
