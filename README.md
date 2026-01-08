@@ -1,3 +1,33 @@
+# ⚠️ Repository Deprecated
+
+This repository contains early experimental work from mid-2025. It has been superseded by systematic investigation producing a coherent mechanistic framework.
+
+**The work continues here:**
+
+| Repository | Focus |
+|------------|-------|
+| **[mlpoking](https://github.com/cepunkt/mlpoking)** | Foundation — elimination mechanics, constraint topology, why prompts fail |
+| **[mlcosplay](https://github.com/cepunkt/mlcosplay)** | Application — structured collaboration frameworks, domain loading |
+| **[mlrp](https://github.com/cepunkt/mlrp)** | Production — narrator systems, character engineering |
+
+## What Changed
+
+The original "Tom the Amnesia Patient" framing was useful intuition but lacked mechanistic grounding. Eight months of systematic investigation produced a different model:
+
+> Training eliminates wrong continuations, carving constraint topology. Generation flows through cheapest paths.
+
+This reframe—`RIGHT(x) ≈ ¬WRONG(x)`—produces falsifiable predictions and practical engineering principles.
+
+## Historical Note
+
+This repo is preserved as historical artifact. The patterns visible here (percentage claims, "context positioning power") informed later methodology development through their limitations.
+
+---
+
+> *Archived: January 2026*
+
+---
+
 # AI Roleplay Engineering: Advanced Context Architecture for Large Language Models
 
 > **Disclaimer**: This is just creative guessing and engineering accidents that happened to work. AI tools helped write this documentation, making it sound way smarter than it actually is. We're documenting patterns we stumbled across while trying to make statistical text generators pretend to be characters. If this accidentally contains useful information, that's a happy coincidence, not expertise.
